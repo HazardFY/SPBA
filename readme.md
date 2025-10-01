@@ -24,7 +24,7 @@ We propose the Stealthy Patch-Wise Backdoor Attack (SPBA), the first patch-wise 
 ## Training
 
 
-> CUDA_VISIBLE_DEVICES=0 python backdoor_attack.py --seed 0 --name SPBA --L2_weight 1 --chamfer_weight 10 --Hausdorff_weight 1 --patch_size 32 --topk 16 --model pointnet2_cls' 
+> CUDA_VISIBLE_DEVICES=0 python backdoor_attack.py --seed 0 --name SPBA --L2_weight 1 --chamfer_weight 5 --Hausdorff_weight 1 --patch_size 32 --topk 16 --model pointnet2_cls' 
 
 * name: The name of the experiment.
 
