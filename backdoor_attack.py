@@ -361,8 +361,7 @@ def main(args):
     log_string('Load dataset ...')
 
     if 'modelnet' in args.dataset:
-        # DATA_PATH = './data/modelnet40_normal_resampled/'
-        DATA_PATH = '../../../ICASSP/Pointnet_Pointnet2_pytorch-master/data/modelnet40_normal_resampled/'
+        DATA_PATH = './data/modelnet40_normal_resampled/'
         TRAIN_DATASET = ModelNet40_GFT_dat(root=DATA_PATH, args=args, split='train')
         TEST_DATASET = ModelNet40_GFT_dat(root=DATA_PATH, args=args, split='test')
     elif 'shapenet' in args.dataset:
